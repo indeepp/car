@@ -23,7 +23,11 @@ public class Jeep extends Carro {
     
      @Override
     public void buzinar() {
-        //super.buzinar();
+        super.buzinar();
+        
         System.out.println("buzina Jeep");
     }
+    public String ToString(){
+        return " Isto é um Jeep";
+}
 }

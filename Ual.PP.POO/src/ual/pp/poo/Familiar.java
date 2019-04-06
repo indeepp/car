@@ -12,9 +12,13 @@ public class Familiar extends Carro {
         System.out.println("AC ligado!");
         
     }
+    
  @Override
     public void buzinar() {
-        //super.buzinar();
+        super.buzinar();
         System.out.println("buzina Familiar");
     }
+    public String ToString(){
+        return " Isto é um Familiar";
+}
 }

@@ -1,20 +1,20 @@
 package ual.pp.poo;
 
-public class Carro {
+public abstract class Carro {
 
     public String matricula;
-    public int velocidadeAtual;
+    public int velocidadeAtual = 0;
     public final int velocidadeMaxima = 200;
     public Condutor condutor;
     public boolean ligado;
 
     public Carro() {
 
-        this.ligado = false;
+        this.ligado = true;
     }
 
-    public void setMatricula(String nome) {
-        this.matricula = nome;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     public void setCondutor(Condutor condutor) {
@@ -39,7 +39,17 @@ public class Carro {
 
     public void buzinar() {
         System.out.println("Buzina do carro");
+        
 
+    }
+    void ligar(){
+        System.out.println("Vrummmmm");
+                
+                
+    }
+    
+    void desligar(){
+        System.out.println("Rrrrrrrrr");
     }
 
     void acelerar() {
@@ -68,7 +78,12 @@ public class Carro {
             }
         } else {
             System.out.println("O	Carro	não	pode	travar	pois	está	desligado!");
+    
+        
+    
+        
         }
     }
+  
+ }     
 
-}
