@@ -5,7 +5,7 @@
  */
 package ual.pp.poo;
 
-public class Condutor {
+public class Condutor  {
     //Atributos
 
     private String nome;
